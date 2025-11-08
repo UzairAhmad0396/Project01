@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #111;
+}
+
+/********** Header **********/
+
+header {
+    background: url(background_image.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button {
+    background-color: red;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar button:hover {
+    background: rgb(243, 1, 1);
+}
+
+.header-section {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.header-section h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-section h6 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-section p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.header-section input {
+    margin-top: 25px;
+    width: 350px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.header-section button {
+    background-color: red;
+    padding: 17px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-section button:hover {
+    background: rgb(243, 1, 1);
+}
+
+/********** Hero **********/
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    padding: 30px 0;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.container .posters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+}
+
+.hero .posters .poster {
+    position: relative;
+
+}
+
+.hero .posters .poster img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.hero .posters .poster h1 {
+    position: absolute;
+    font-size: 72px;
+    font-weight: 800;
+    color: gray;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    left: 17px;
+}
+
+.hero .posters .poster h6 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero .posters .poster p {
+    font-size: 14px;
+}
+
+/********** Join **********/
+
+.join {
+    width: 100%;
+    height: 70vh;
+}
+.join h2{
+    color: white;
+}
+
+.join .join-poster {
+    width: 18vw;
+    height: 50vh;
+    border-radius: 15px;
+    background: #333;
+    color: white;
+    padding: 15px;
+    position: relative;
+    margin: 15px;
+}
+
+.join .join-poster h6 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/********** Question section **********/
+
+.question summary {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    margin: 5px 0;
+}
+.question p{
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+padding: 15px;
+}
+
+/********** Question section **********/
+
+#registeration{
+    width: 100%;
+    height: 30vh;
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#registeration p{
+    color: white;
+    text-align: center;
+}
+#registeration input {
+    margin-top: 25px;
+    width: 500px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#registeration button {
+    background-color: red;
+    padding: 17px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#registeration button:hover {
+    background: rgb(243, 1, 1);
+}
+
+/********** Footer **********/
+
+#footer{
+    width: 100%;
+    height: 40vh;
+}
+#footer .mainfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .mainfooter div{
+    display: flex;
+   
+    flex-direction: column;
+    margin-top: 25px;
+}
+#footer a{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+/********** Medis Query **********/
+
+ @media  screen and (max-width: 1200px) {
+    .container{
+        width: 1024px;
+    }
+    .hero {
+    width: 100%;
+    height: 90vh;
+    padding: 30px 0;
+    margin: 15px 0;
+}
+    .container .posters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .posters .poster img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+.join {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 25px;
+}
+.join h2{
+    color: white;
+    margin-bottom: 25px;
+}
+#footer{
+    width: 100%;
+    height: 60vh;
+    padding: 25px 0;
+}
+}
+
+@media screen and (max-width:992px) {
+    .container{
+        width: 900px;
+    }
+   .header-section h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+.hero {
+    width: 100%;
+    height: 150vh;
+    padding: 30px 0;
+    margin: 15px 0;
+}
+.hero .posters .poster img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 15px;
+    transition: all 0.3s;
+}
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 700px;
+        padding: 0 15px;
+    }
+     .header-section h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.join .join-poster {
+    width: 20vw;
+    height: 60vh;
+    border-radius: 15px;
+    background: #333;
+    color: white;
+    padding: 15px;
+    position: relative;
+    margin: 5px;
+}
+.join {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 55px;
+}
+}
+@media screen and (max-width: 368px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .navbar img{
+        width: 100px;
+    }
+    .header-section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+    .header-section h1 {
+    font-size: 1.6rem;
+}
+.header-section h6 {
+    font-size: 14px;
+}
+.header-section p {
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+}
+.header-section input {
+    margin: 25px 0;
+    width: 250px;
+    height: 30px;
+    padding: 10px 15px;
+    border-radius: 3px;
+   
+}
+.registeration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header-section button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.hero {
+    width: 100%;
+    height: 340vh;
+    padding: 30px 0;
+    margin: 15px 0;
+}
+.join {
+    width: 100%;
+    height: 240vh;
+}
+.join .join-poster {
+    width: 100%;
+    height: 50vh;
+    padding: 15px;
+    margin: 15px;
+}
+#registeration{
+    width: 100%;
+    height: 40vh;
+    margin: 35px 0;   
+}
+#registeration .login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+#registeration input {
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 15px;
+}
+#registeration button {
+    padding: 10px 15px; 
+}
+#footer{
+    width: 100%;
+    height: 100vh;
+}
+#footer .mainfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+} 
